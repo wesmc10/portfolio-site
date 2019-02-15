@@ -5,13 +5,23 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
+    background-color: #094346;
 }
 
-nav, footer {
-    background-color: rgb(124, 116, 116);
+main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.85;
+    color: silver;
+}
+
+nav, footer { 
+    font-family: 'Anton', sans-serif;
+    background-color: #c0c0c0;
+    margin: 0 3%;
 }
 
 nav {
@@ -23,41 +33,163 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    min-height: 60px;
-    padding: 4% 0;
+    min-height: 75px;
+    border-radius: 0 0 15px 15px;
 }
 
- nav .home-link {
-    font-size: 40px;
+a:link, a:visited {
+    text-decoration: none;
+    color: #094346;
+}
+
+a:hover, a:focus {
+    color: #461909;
+    font-size: 120%;
+}
+
+.first-letter {
+    font-size: 30px;
+}
+
+ nav > .home-link {
+    font-size: 20px;
+    letter-spacing: 1px;
     margin-left: 4%;
 }
 
-nav .nav-links {
+.nav-links > .link {
+    list-style: none;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.work, .social {
+    opacity: 0;
+}
+
+nav > .nav-links {
     margin-right: 4%;
 }
 
-li {
+.social-links > li {
     list-style: none;
+    letter-spacing: 2px;
 }
 
 header {
-    padding: 25% 4%;
+    margin: 165px 6% 100px;
 }
 
 header > p {
     text-align: left;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 header .welcome {
-    font-size: 40px;
+    font-family: 'Alegreya', serif;
+    font-size: 45px;
+    color: #461909;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+header > img {
+    display: none;
 }
 
 footer {
     padding: 1% 0;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
 }
 
-section {
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.first-project {
     min-height: 200px;
-    background-color: darkgrey;
-    padding: 30% 0;
+    margin: 0 6% 20%;
+}
+
+.first-project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.first-project > p {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 700px) {
+    .first-letter {
+        font-size: 33px;
+    }
+
+    nav .home-link {
+        font-size: 22px;
+    }
+
+    .nav-links > .link {
+        opacity: 100;
+    }
+
+    .work, .social {
+        margin-right: 65px;
+    }
+
+    .nav-links, .social-links {
+        font-size: 18px;
+    }
+
+    .first-project {
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .first-letter {
+        font-size: 36px;
+    }
+
+    nav .home-link {
+        font-size: 24px;
+    }
+
+    .nav-links, .social-links {
+        font-size: 21px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    header .welcome {
+        font-size: 50px;
+    }
+
+    header > p {
+        width: 40%;
+        font-size: 18px;
+        display: inline-block;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+
+    header > img {
+        display: inline-block;
+    }
+
+    footer {
+        padding: 0.5% 0;
+    }
 }

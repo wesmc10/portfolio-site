@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>HTML Wireframe for Portfolio Site</title>
+        <title>Wes McElroy Portfolio Site</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
         <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya|Anton|Libre+Franklin" rel="stylesheet">
     </head>
 
     <body>
         <nav role="navigation">
-            <div class="home-link">WM</div>
+            <div class="home-link"><a href="#top"><span class="first-letter">W</span>ES <span class="first-letter">M</span>CELROY</a></div>
             <ul class="nav-links">
-                <li>Contact</li>
+                <li class="work link"><a href="#section-one">WORK</a></li>
+                <li class="social link"><a href="#bottom">SOCIAL</a></li>
+                <li class="contact link"><a href="mailto:mcelroywes@gmail.com">CONTACT</a></li>
             </ul>
         </nav>
 
@@ -22,14 +25,24 @@
                 currently a student in Bloc’s Web Development bootcamp. I enjoy solving problems with simple, elegant
                 solutions, learning, and thinking creatively. When I’m not coding, I like watching and playing sports,
                 reading, and philosophizing.</p>
+                <img src="images/profile-pic3.jpg" alt="My profile picture">
             </header>                
 
-            <section>
-                Philosophy Quiz App
-                <img src="images/phil-quiz-resize2.jpg" alt="Screenshot of Philosophy Quiz App">
+            <section class="first-project" id="section-one">
+                <img src="images/phil-quiz2.jpg" alt="Screenshot of Philosophy Quiz App">
+                <p>Philosophy Quiz App</p>
             </section>
 
         </main>
-        <footer role="contentinfo">© Wes McElroy 2019</footer>
+
+        <footer role="contentinfo" id="bottom">
+            <ul class="social-links">
+                <li><a href="https://github.com/wesmc10">GITHUB</a></li>
+                <li><a href="https://www.linkedin.com/in/wes-mcelroy-26aa4513a/">LINKEDIN</a></li>
+            </ul>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="index.js" type="text/javascript" ></script>
     </body>
 </html>
