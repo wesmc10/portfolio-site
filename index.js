@@ -1,3 +1,19 @@
+// this function is responsible for hiding the navbar when the user scrolls down
+// and displaying the navbar when the user scrolls up
+function hideNavOnScrollDown() {
+    let previousPosition = window.pageYOffset;
+    $(window).on('scroll', function(event) {
+        let currentPosition = window.pageYOffset;
+        if (currentPosition > previousPosition) {
+            $('nav').fadeOut();
+        }
+        else if (currentPosition < previousPosition) {
+            $('nav').fadeIn();
+        }
+        previousPosition = currentPosition;
+    });
+}
+
 // this function is responsible for scrolling to the top of the page when the user
 // clicks the top left link
 function scrollToTopOfPage() {
@@ -27,6 +43,7 @@ function scrollToSocial() {
 
 // this is the callback function for when the page loads
 function portfolioSite() {
+    hideNavOnScrollDown();
     scrollToTopOfPage();
     scrollToWork();
     scrollToSocial();
