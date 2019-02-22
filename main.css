@@ -15,7 +15,7 @@ main {
     font-size: 20px;
     text-align: center;
     line-height: 1.85;
-    color: silver;
+    color: #c0c0c0;
 }
 
 nav, footer { 
@@ -43,15 +43,11 @@ nav a:link, footer a:link, nav a:visited, footer a:visited {
 }
 
 nav a:hover, footer a:hover, nav a:focus, footer a:focus {
-    color: #461909;
-}
-
-.first-letter {
-    font-size: 30px;
+    text-decoration: underline;
 }
 
  nav > .home-link {
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: 1px;
     margin-left: 4%;
 }
@@ -88,7 +84,7 @@ header > p {
 header .welcome {
     font-family: 'Alegreya', serif;
     font-size: 45px;
-    color: #461909;
+    color: #ff8614;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
 }
@@ -127,6 +123,11 @@ footer {
 
 .first-project > .title {
     margin-bottom: 10px;
+    color: #ff8614;
+    font-family: 'Alegreya', serif;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .first-project > .description {
@@ -149,11 +150,11 @@ footer {
 
 .project-links a:link, .project-links a:visited {
     text-decoration: none;
-    color: #461909;
+    color: silver;
 }
 
 .project-links a:hover, .project-links a:focus {
-    color: silver;
+    text-decoration: underline;
 }
 
 .project-links > .live {
@@ -165,12 +166,8 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
-    .first-letter {
-        font-size: 33px;
-    }
-
     nav .home-link {
-        font-size: 22px;
+        font-size: 27px;
     }
 
     .nav-links > .link {
@@ -189,18 +186,18 @@ footer {
         margin-bottom: 90px;
     }
 
+    .first-project > .title {
+        font-size: 20px;
+    }
+
     .first-project > .project-links {
         font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1000px) {
-    .first-letter {
-        font-size: 36px;
-    }
-
     nav .home-link {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .nav-links, .social-links {
@@ -236,15 +233,12 @@ footer {
     }
 
     .first-project > .title {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .first-project > .description {
         margin-bottom: 15px;
         font-size: 16px;
-        //max-width: 750px;
-        //margin-left: auto;
-        //margin-right: auto;
     }
 
     .first-project > .project-links {
