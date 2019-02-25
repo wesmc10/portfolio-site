@@ -166,8 +166,12 @@ footer {
 }
 
 @media screen and (max-width: 415px) {
-    nav > .home-link {
-        font-size: 20px;
+    .work, .social {
+        display: none;
+    }
+
+    nav .home-link {
+        font-size: 21px;
     }
 }
 
