@@ -11,7 +11,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 20px;
     text-align: center;
     line-height: 1.85;
@@ -77,13 +77,13 @@ header {
 
 header > p {
     text-align: left;
-    font-size: 16px;
+    font-size: 17px;
     letter-spacing: 1px;
 }
 
 header .welcome {
     font-family: 'Alegreya', serif;
-    font-size: 45px;
+    font-size: 40px;
     color: #5AE5ED;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
@@ -132,7 +132,7 @@ footer {
 
 .first-project > .description {
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 15px;
     max-width: 750px;
     margin-left: auto;
@@ -165,6 +165,12 @@ footer {
     list-style: none;
 }
 
+@media screen and (max-width: 415px) {
+    nav > .home-link {
+        font-size: 20px;
+    }
+}
+
 @media screen and (min-width: 700px) {
     nav .home-link {
         font-size: 27px;
@@ -182,12 +188,24 @@ footer {
         font-size: 18px;
     }
 
+    header .welcome {
+        font-size: 45px;
+    }
+
+    header > p {
+        font-size: 19px;
+    }
+
     .first-project {
         margin-bottom: 90px;
     }
 
     .first-project > .title {
         font-size: 20px;
+    }
+
+    .first-project > .description {
+        font-size: 17px;
     }
 
     .first-project > .project-links {
@@ -218,7 +236,7 @@ footer {
 
     header > p {
         width: 40%;
-        font-size: 18px;
+        font-size: 21px;
         display: inline-block;
         margin-right: 10%;
         margin-top: 10%;
@@ -238,7 +256,7 @@ footer {
 
     .first-project > .description {
         margin-bottom: 15px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .first-project > .project-links {
