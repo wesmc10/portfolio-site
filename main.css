@@ -46,7 +46,11 @@ nav a:hover, footer a:hover, nav a:focus, footer a:focus {
     text-decoration: underline;
 }
 
- nav > .home-link {
+nav > .short-home-link {
+    display: none;
+}
+
+nav > .home-link {
     font-size: 24px;
     letter-spacing: 1px;
     margin-left: 4%;
@@ -165,13 +169,21 @@ footer {
     list-style: none;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 370px) {
     .work, .social {
         display: none;
     }
 
+    nav > .short-home-link {
+        display: inline-block;
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin-left: 4%;
+    }
+
     nav .home-link {
-        font-size: 21px;
+        //font-size: 21px;
+        display: none;
     }
 }
 

@@ -15,11 +15,20 @@ function hideNavOnScrollDown() {
 }
 
 // this function is responsible for scrolling to the top of the page when the user
-// clicks the top left link
+// clicks the top left link on screens larger than 370px
 function scrollToTopOfPage() {
     $('.home-link').on('click', function(event) {
         event.preventDefault();
-        $('html, body').animate({scrollTop: 10}, 'slow');
+        $('html, body').animate({scrollTop: 0}, 'slow');
+    });
+}
+
+// this function is responsible for scrolling to the top of the page when the user
+// clicks the top left link on screens smaller than 370px
+function scrollToTopOfPageShortLink() {
+    $('nav').on('click', '.short-home-link', function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 'slow');
     });
 }
 
@@ -45,6 +54,7 @@ function scrollToSocial() {
 function portfolioSite() {
     hideNavOnScrollDown();
     scrollToTopOfPage();
+    scrollToTopOfPageShortLink()
     scrollToWork();
     scrollToSocial();
 }
