@@ -37,7 +37,7 @@ function scrollToTopOfPageShortLink() {
 function scrollToWork() {
     $('.work').on('click', function(event) {
         event.preventDefault();
-        $('html, body').animate({scrollTop: $(document).height() - $(window).height()}, 'slow');
+        $('html, body').animate({scrollTop: $('#section-one').offset().top - 25}, 'slow');
     });
 }
 
