@@ -75,17 +75,17 @@ nav > .nav-links {
     letter-spacing: 2px;
 }
 
-header {
+.introduction {
     margin: 165px 6% 100px;
 }
 
-header > p {
+.introduction > p {
     text-align: left;
     font-size: 17px;
     letter-spacing: 1px;
 }
 
-header .welcome {
+.introduction .welcome {
     font-family: 'Alegreya', serif;
     font-size: 40px;
     color: #5AE5ED;
@@ -93,7 +93,7 @@ header .welcome {
     text-shadow: 1px 1px 1px black;
 }
 
-header > img {
+.introduction > img {
     display: none;
 }
 
@@ -106,7 +106,7 @@ footer {
 .social-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .project {
@@ -182,7 +182,6 @@ p {
     }
 
     nav .home-link {
-        //font-size: 21px;
         display: none;
     }
 }
@@ -204,11 +203,11 @@ p {
         font-size: 18px;
     }
 
-    header .welcome {
+    .introduction .welcome {
         font-size: 45px;
     }
 
-    header > p {
+    .introduction > p {
         font-size: 19px;
     }
 
@@ -238,27 +237,26 @@ p {
         font-size: 21px;
     }
 
-    header {
+    .introduction {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         margin-left: 4%;
         margin-right: 4%;
     }
 
-    header .welcome {
+    .introduction .welcome {
         font-size: 50px;
     }
 
-    header > p {
+    .introduction > p {
         width: 40%;
         font-size: 21px;
         display: inline-block;
-        margin-right: 10%;
+        margin-right: 2%;
         margin-top: 10%;
     }
 
-    header > img {
+    .introduction > img {
         display: inline-block;
     }
 
