@@ -1,5 +1,5 @@
-// this function is responsible for hiding the navbar when the user scrolls down
-// and displaying the navbar when the user scrolls up
+'use strict'
+
 function hideNavOnScrollDown() {
     let previousPosition = window.pageYOffset;
     $(window).on('scroll', function(event) {
@@ -14,8 +14,7 @@ function hideNavOnScrollDown() {
     });
 }
 
-// this function is responsible for scrolling to the top of the page when the user
-// clicks the top left link on screens larger than 370px
+
 function scrollToTopOfPage() {
     $('.home-link').on('click', function(event) {
         event.preventDefault();
@@ -23,8 +22,7 @@ function scrollToTopOfPage() {
     });
 }
 
-// this function is responsible for scrolling to the top of the page when the user
-// clicks the top left link on screens smaller than 370px
+
 function scrollToTopOfPageShortLink() {
     $('nav').on('click', '.short-home-link', function(event) {
         event.preventDefault();
@@ -32,8 +30,7 @@ function scrollToTopOfPageShortLink() {
     });
 }
 
-// this function is responsible for scrolling to the section that shows my work
-// when the user clicks the 'work' link
+
 function scrollToWork() {
     $('.work').on('click', function(event) {
         event.preventDefault();
@@ -41,8 +38,7 @@ function scrollToWork() {
     });
 }
 
-// this function is responsible for scrolling to the bottom of the page when the user
-// clicks the 'social' link, so that the user can follow the links in the footer
+
 function scrollToSocial() {
     $('.social').on('click', function(event) {
         event.preventDefault();
@@ -50,7 +46,7 @@ function scrollToSocial() {
     });
 }
 
-// this is the callback function for when the page loads
+
 function portfolioSite() {
     hideNavOnScrollDown();
     scrollToTopOfPage();
