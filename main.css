@@ -165,7 +165,7 @@ p {
     text-decoration: underline;
 }
 
-.project-links > .live {
+.project-links > .live, .project-links > .client-repo {
     margin-right: 10%;
 }
 
