@@ -281,7 +281,7 @@ p {
         font-size: 21px;
     }
 
-    .project-links > .live {
+    .project-links > .live, .project-links > .client-repo {
         margin-right: 8%;
     }
 
